@@ -1,0 +1,176 @@
+@font-face {
+	font-family: 'copy';
+	src: url('Andada-Regular.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'copy';
+	src: url('Andada-Italic.otf') format('opentype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'copy';
+	src: url('Andada-Bold.otf') format('opentype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'copy';
+	src: url('Andada-BoldItalic.otf') format('opentype');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'headings';
+	src: url('FFF_Tusj-webfont.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+h1, h2 { font-family:'headings', Times New Roman; }
+h3, h4, h5 { font-family:'copy', Times New Roman; }
+
+h1 { font-size: 280%; margin-top: 0; padding-top: 30px; padding-bottom: 30px;}
+h2 { font-size:180%; }
+h3 { font-size:150%; }
+.wrapper { margin:0px auto; max-width:880px; transition:all .4s; box-sizing:border-box; }
+.AlwaysOpen .wrapper {
+	max-width:initial; margin:0 0 0 0; padding-right:300px; padding-left:0px;
+}
+
+.AlwaysOpen h1 { padding-left:25px; }
+
+pre { white-space: pre-wrap; font-family: 'monoFont', monospace; color: #fff; background-color: #383838; padding:10px; line-height:120%; }
+body { font-family: 'copy', sans-serif, verdana; color: rgba(0,0,0,.8); padding:10px; /* background: rgb(255, 255, 245); */ font-size: 17px; line-height: 170%;}
+html { background-color: rgba(245, 245, 245, 1); }
+body { background-image:url(vert-line.png); }
+* { font-size: 1em; }
+i.c { font-weight:bold; }
+i.c, .Constant { color: #39B24A; }
+
+.vimCodeElement { line-height:120%; }
+.Type { color: rgba(96, 255, 96, 0.72); }
+.Statement { color: #C2C28E; }
+.Constant { color: rgba(255, 160, 160, 0.71); }
+.Identifier { color: #44D3D3; }
+.Special { color: #44D3D3; }
+.Comment { color: rgba(62, 182, 192, 0.5); }
+
+.jump { 
+	white-space:inherit;
+	-webkit-columns:100px 2;
+	padding: 0 11px;
+}
+
+.mb0 { margin-bottom:0; }
+
+h4 { /* border-bottom:1px dotted #000; */ /* padding-bottom:.4em; */ margin-bottom:.4em; /* margin-left: -20px; */}
+h5 { margin: 0; color: rgb(61, 77, 163); font-size: 11px;}
+h4 + h5 { margin-top:0; }
+
+.expand { color:blue; cursor:pointer; }
+.expanse { overflow:hidden; max-height:0px; opacity:0; transition:all 1s; margin-top:0px; }
+.expand:hover + .expanse,
+.expanse:hover { max-height:10000px; opacity:1; cursor:pointer; }
+
+.jump a { display:block; text-decoration:none; }
+
+pre {display: block; padding: 40px; border: 1px dotted rgba(0,0,0,.1); font-size:89%; }
+code {display: inline-block; padding: 5px; border: 1px dotted rgba(0,0,0,.1); font-size:89%; line-height:120%; }
+pre, code { white-space:pre-wrap; }
+pre > u { text-decoration:none; font-size:150%; vertical-align:middle; }
+pre > em { color:rgba(0,0,0,.3) }
+pre .hide { display:none; }
+pre cite { font-style:normal; opacity:.4; font-size:85%; }
+
+
+div.section { /* margin:20px 0; */ white-space:pre-wrap; padding: 0 20px; background-color: rgba(255,255,255,0.6);}
+
+dl { white-space:initial; }
+dl dt { font-weight:bold; margin:0; padding:0; }
+dl dd { margin:0 0 0 10px; padding:0; }
+
+#API dl { margin:0; padding:0 15px; }
+#API dl dt:before { content:"\A0"; display:block; height:3px; }
+#API dl dt { margin:10px 0 0; color: rgb(0, 0, 0); display:inline; font-style:italic; font-weight: bold; }
+#API dl dd:before { content:"– "; }
+#API dl dd { display:inline; }
+#API { }
+#API .Title { padding:15px 20px; font-size:24px; line-height:30px; font-weight:bold; background-color: rgba(163, 202, 202, 0.24); }
+#API .Title .Tags { font-size:14px; font-weight:normal; float:right; line-height:30px; }
+#API .Guts { padding:0 20px 20px; }
+#API .Source { float:right; }
+#API .Title .link { margin-right: 10px; color: rgba(76, 174, 199, 0.68); cursor: pointer; font-size: 20px; text-decoration:none; font-weight: normal; }
+#API .Title .linkBack { margin-right:0; float:right; vertical-align: baseline; line-height: 1.5em; font-size: 1.1em; font-weight: bold; margin-left: 22px;}
+#API .Returns { font-weight:bold; }
+#API .Label { font-weight:bold; margin:1em 0 .4em; color: rgb(22, 180, 180); }
+#API .Returns .Label { font-weight: bold; }
+#API .Description { }
+#API .Definitions { }
+#API .Examples { }
+#API .Examples .Example { white-space:pre-wrap; font-family:
+'monoFont', monospace; padding: 15px 20px; border:1px dotted rgba(0,0,0,.1); margin: 0 0px 5px; background-color: rgba(255, 255, 255, 0.55); line-height: 22px; font-size:14px; }
+
+.Examples .keyword  {  color: #000000;  font-weight: bold;}
+.Examples .support  {  color: #000000; font-weight:bold; }
+.Examples .operator { color: #5F5FCF; }
+.Examples .string { color: #60ff60; }
+.Examples .dot { color: #000; }
+.Examples .constant { color: #5968B3; font-weight: bold;}
+.Examples .character { color: #000; }
+.Examples .comment { color: rgba(0, 0, 0, 0.46); }
+.Examples .numeric { color: #000; font-weight:bold; }
+.Examples .function { color: #000; font-weight:bold; }
+.Examples .function.call { color: rgba(0, 0, 0, 0.75); font-weight:bold; }
+.Examples .entity { color: #000; font-weight:bold; }
+.Examples .jDog { color: #678F82; /* font-weight:bold; */ }
+.Examples .inQuotes { color: rgba(106, 112, 47, 0.86); font-weight:normal; font-style:italic; }
+.Examples .Dog { color: rgb(21, 117, 206); font-weight:bold; }
+
+.Usage { font-family:monospace; font-size:16px; }
+.Usage .Label { font-family:"copy", sans-serif; }
+.Usage {}
+
+.Legend { padding: 0 20px 30px; }
+.Legend .Section { line-height:18px; }
+.Legend h4 { font-size:15px; }
+.Legend span { }
+.Legend a { display:inline-block; width:140px; font-size:13px; color: rgb(5, 127, 128); text-decoration:none; }
+.Legend a:after { content:"↧"; }
+
+#Editor { }
+#Editor .Editor,
+#Editor .Output { box-sizing:border-box; width:100%; min-height:300px; padding:9px; font-size:12px; font-family:'monoFont', monospace; }
+
+#Editor .Output { min-height:200px; }
+#Editor .Actions { padding-bottom:5px; }
+#Editor .Actions button { }
+
+.Manifesto .wrapper {  }
+.Manifesto h4 { margin-bottom:-1em; }
+
+#symbols {
+	position:relative;
+}
+
+@media (min-width:0px) and (max-width:870px) {
+	#sidePanel.Open + .wrapper { padding-right:169px; }
+	.wrapper { max-width:initial; transition:all 1s; }
+	h1 { padding-left:18px; }
+}
+@media (min-width:871px) and (max-width:1100px) {
+	#sidePanel.Open + .wrapper { padding-right:169px; max-width:initial; }
+	#sidePanel.Open + .wrapper h1 { padding-left:18px; }
+
+	.AlwaysOpen #sidePanel.Open + .wrapper { padding-right: 300px; max-width:initial; }
+	.AlwaysOpen #sidePanel.Open + .wrapper h1 { }
+}
+
+
+
+

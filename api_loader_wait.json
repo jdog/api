@@ -1,0 +1,26 @@
+{
+	"jDog" : "version 1.0"
+	, "Methods" : [
+		{
+			"Name" : "wait"
+			, "Usage" : [
+					[ "string Path", "function Callback" ]
+					, [ "string Path+", "object Ref", "function Callback" ]
+				]
+			, "Tags" : [ "wait", "asynchronous" ]
+			, "Source" : [ "page.loader.js" ]
+			, "Parent" : [ "Base" ]
+			, "Examples" : [
+				"var ref = {}\n\nPAGE.wait(\n 'Modules.dataService.read'\n , 'Constructors.LocalStorage'\n , ref\n , function(){\n\n   // now I have access to Modules.dataService.read\n   ref.read()\n\n   // and I have access to Constructors.LocalStorage\n   var ls = ref.LocalStorage(\"helloWorld\")\n\n})"
+				, "var ref = {}\n\nfunction init() {\n  alert(\"finished loading\")\n  console.log(ref)\n}\n\nPAGE.wait( \n  'Modules.dataService' \n  , 'window.dropDown' \n  , 'Constructors.Login' \n  , ref \n  , init)"
+			]
+			, "Description" : "This is the foundation of waiting until 'path' or 'paths' have loaded before launching callback. Notice the Ref object. Unlike requirejs which puts items into the callback's arguments, jDog modifies the reference object. Library items get added into this object as keys based on the name allowing code within the callback and beyond to access them." 
+			, "Definitions" : {
+				"Path" : "Path of the library item required, example 'Constructors.YourConstructor'"
+				, "Ref" : "Reference Object to pass all library items into"
+				, "Callback" : "Function to call when all is loaded"
+			}
+			, "Returns" : "undefined"
+		}
+	]
+}
