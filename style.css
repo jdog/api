@@ -1,34 +1,34 @@
 @font-face {
 	font-family: 'copy';
-	src: url('Andada-Regular.otf') format('opentype');
+	src: url('//jdog.github.io/api/Andada-Regular.otf') format('opentype');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'copy';
-	src: url('Andada-Italic.otf') format('opentype');
+	src: url('//jdog.github.io/api/Andada-Italic.otf') format('opentype');
 	font-weight: 400;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'copy';
-	src: url('Andada-Bold.otf') format('opentype');
+	src: url('//jdog.github.io/api/Andada-Bold.otf') format('opentype');
 	font-weight: 600;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'copy';
-	src: url('Andada-BoldItalic.otf') format('opentype');
+	src: url('//jdog.github.io/api/Andada-BoldItalic.otf') format('opentype');
 	font-weight: 600;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'headings';
-	src: url('FFF_Tusj-webfont.woff') format('woff');
+	src: url('//jdog.github.io/api/FFF_Tusj-webfont.woff') format('woff');
 	font-weight: 600;
 	font-style: normal;
 }
