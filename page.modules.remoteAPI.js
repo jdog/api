@@ -1,24 +1,33 @@
-PAGE.add("Modules.remoteAPI", (function() {
+PAGE.loadStyle(
+	"//jdog.github.io/api/style.css"
+	, "//jdog.github.io/api/sidePanel.css"
+)
 
-	PAGE.loadStyle(
-		"//jdog.github.io/api/style.css"
-		, "//jdog.github.io/api/sidePanel.css"
-	)
+PAGE.loadScript(
+	"//jdog.github.io/api/page.extend.batchCallback.js"
+	, "//jdog.github.io/api/page.ajax.js"
+	, "//jdog.github.io/api/page.Constructors.APIMethod.js"
+	, "//jdog.github.io/api/page.Constructors.APIIndex.js"
+	, "//jdog.github.io/api/page.functions.createLegend.js"
+	, "//jdog.github.io/api/page.ColorizeMap.javascript.js"
+	, "//jdog.github.io/api/page.ColorizeMap.jDog.js"
+	, "//jdog.github.io/api/page.ColorizeMap.generic.js"
+	, "//jdog.github.io/api/page.Constructors.ColorizeCode.js"
+	, "//jdog.github.io/api/page.clone.js"
+	, "//jdog.github.io/api/page.modules.dom.js"
+	, "//jdog.github.io/api/page.Modules.navigation.js"
+	, true)
 
-	PAGE.loadScript(
-		"//jdog.github.io/api/page.extend.batchCallback.js"
-		, "//jdog.github.io/api/page.ajax.js"
-		, "//jdog.github.io/api/page.Constructors.APIMethod.js"
-		, "//jdog.github.io/api/page.Constructors.APIIndex.js"
-		, "//jdog.github.io/api/page.functions.createLegend.js"
-		, "//jdog.github.io/api/page.ColorizeMap.javascript.js"
-		, "//jdog.github.io/api/page.ColorizeMap.jDog.js"
-		, "//jdog.github.io/api/page.ColorizeMap.generic.js"
-		, "//jdog.github.io/api/page.Constructors.ColorizeCode.js"
-		, "//jdog.github.io/api/page.clone.js"
-		, "//jdog.github.io/api/page.modules.dom.js"
-		, "//jdog.github.io/api/page.Modules.navigation.js"
-		, true)
+PAGE.addWait(
+	"Modules.remoteAPI"
+	, [
+		"ajax"
+		, "Constructors.APIMethod" 
+		, "ext.BatchCallback" 
+		, "Modules.dom"
+		, "ready" // dom is loaded
+	]
+	, function(ref) {
 
 	var f = new Function()
 	var dog = {
@@ -36,8 +45,8 @@ PAGE.add("Modules.remoteAPI", (function() {
 		, legend : f
 		, clickCurrent : f
 		, buildAllSections : f
+		, ref : ref
 	}
-	, ref = dog.ref = {}
 	, J = jDog
 
 
@@ -117,19 +126,6 @@ PAGE.add("Modules.remoteAPI", (function() {
 		for (var x in arr) createSection( arr[x] )
 	}
 
-	function init() {
-		// do nothing, should happen at local level
-	}
-
-	PAGE.wait(
-		"ajax"
-		, "Constructors.APIMethod" 
-		, "ext.BatchCallback" 
-		, "Modules.dom"
-		, "ready" // dom is loaded
-		, ref
-		, init)
-
 	return dog
 
-}()))
+})
