@@ -1,6 +1,9 @@
 PAGE.add("Modules.remoteAPI", (function() {
 
-	var dog = { }
+	PAGE.loadStyle(
+		"//jdog.github.io/api/style.css"
+		, "//jdog.github.io/api/sidePanel.css"
+	)
 
 	PAGE.loadScript(
 		"//jdog.github.io/api/page.extend.batchCallback.js"
@@ -17,6 +20,6 @@ PAGE.add("Modules.remoteAPI", (function() {
 		, "//jdog.github.io/api/page.Modules.navigation.js"
 		, true)
 
-	return dog
+	return true
 
 }()))
