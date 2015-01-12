@@ -4,16 +4,16 @@ PAGE.add("Modules.remoteAPI", (function() {
 	}
 
 	PAGE.loadScript(
-		"page.extend.batchCallback.js"
-		, "page.Constructors.APIMethod.js"
-		, "page.Constructors.APIIndex.js"
-		, "page.functions.createLegend.js"
-		, "page.ColorizeMap.javascript.js"
-		, "page.ColorizeMap.jDog.js"
-		, "page.ColorizeMap.generic.js"
-		, "page.Constructors.ColorizeCode.js"
-		, "page.clone.js"
-		, "page.modules.dom.js"
+		"//jdog.github.io/api/page.extend.batchCallback.js"
+		, "//jdog.github.io/api/page.Constructors.APIMethod.js"
+		, "//jdog.github.io/api/page.Constructors.APIIndex.js"
+		, "//jdog.github.io/api/page.functions.createLegend.js"
+		, "//jdog.github.io/api/page.ColorizeMap.javascript.js"
+		, "//jdog.github.io/api/page.ColorizeMap.jDog.js"
+		, "//jdog.github.io/api/page.ColorizeMap.generic.js"
+		, "//jdog.github.io/api/page.Constructors.ColorizeCode.js"
+		, "//jdog.github.io/api/page.clone.js"
+		, "//jdog.github.io/api/page.modules.dom.js"
 		, true)
 
 	return dog
