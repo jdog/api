@@ -37,6 +37,7 @@ PAGE.add("Modules.remoteAPI", (function() {
 		, clickCurrent : f
 		, buildAllSections : f
 	}
+	, ref = dog.ref = {}
 	, J = jDog
 
 
