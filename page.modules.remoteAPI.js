@@ -124,7 +124,7 @@ PAGE.add("Modules.remoteAPI", (function() {
 	PAGE.wait(
 		"ajax"
 		, "Constructors.APIMethod" 
-		, "BatchCallback" 
+		, "ext.BatchCallback" 
 		, "Modules.dom"
 		, "ready" // dom is loaded
 		, ref
