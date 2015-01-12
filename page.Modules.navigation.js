@@ -11,6 +11,7 @@ PAGE.add("Modules.navigation", (function() {
 			, e_relativeLinks : []
 			, isOpen : false
 			, alwaysOpen : false
+			, getRelativePath : f
 		}
 		, ref = dog.ref = { }
 
@@ -44,7 +45,7 @@ PAGE.add("Modules.navigation", (function() {
 
 		}
 
-		function getRelativePath() {
+		var getRelativePath = dog.getRelativePath = function () {
 			var split = location.pathname.split("/")
 			, pathname = split > 2 ?  pathname = split.slice(0, split.length - 1).join("/") : ""
 			return location.origin + pathname
