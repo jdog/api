@@ -25,7 +25,7 @@ PAGE.addWait(
 		, "Constructors.APIMethod" 
 		, "ext.BatchCallback" 
 		, "Modules.dom"
-		, "ready" // dom is loaded
+		// , "ready" // dom is loaded
 	]
 	, function(ref) {
 

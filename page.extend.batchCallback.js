@@ -14,7 +14,7 @@
 // doSomething("zbc", batch.tryFinish)
 // doSomething("xbc", batch.tryFinish)
 
-	proto.BatchCallback = PAGE.spawn("ext.BatchCallback", function (count, callback) {
+	proto.BatchCallback = PAGE.add("ext.BatchCallback", function (count, callback) {
 
 		var index = 0
 

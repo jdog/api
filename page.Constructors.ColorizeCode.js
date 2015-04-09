@@ -147,6 +147,7 @@ PAGE.add("Constructors.ColorizeCode", function(Source, options) {
 		"ColorizeMap.javascript"
 		, "ColorizeMap.jDog"
 		, "ColorizeMap.generic"
+		, "clone"
 		, ref
 		, init)
 
