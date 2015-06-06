@@ -53,8 +53,6 @@ PAGE.addWait(
 	// builds out by the an array
 	var build = dog.build = function build(e_root, methods) {
 
-		dog.e_root.innerHTML = ""
-
 		for (var x in methods) {
 			// adds it to the methods in whatever order it comes in careful
 			dog.methods.push(
