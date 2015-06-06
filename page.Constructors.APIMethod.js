@@ -43,7 +43,7 @@ PAGE.add("Constructors.APIMethod", function(e_parent, data, options) {
 			if (usage[x][0] === false) {
 				html += usage[x][1]
 			} else {
-				html += "PAGE."
+				html += "J."
 				html += dog.data.Name
 				html += "("
 				html += usage[x].length ? usage[x].join(", ") : ""
