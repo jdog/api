@@ -1,4 +1,4 @@
-PAGE.loadScript(
+J.load(
 	"page.ajax.js"
 	, "page.extend.batchCallback.js"
 	, "page.Constructors.APIMethod.js"
@@ -12,7 +12,9 @@ PAGE.loadScript(
 	, "page.modules.dom.js"
 	, true)
 
-PAGE.addWait(
+alert("why am I using this still?")
+
+J.addWait(
 	"Modules.jdogAPI"
 
 	, [
@@ -79,7 +81,7 @@ PAGE.addWait(
 		}
 
 		function legend(callback) {
-			PAGE.wait(
+			J.wait(
 				"Functions.createLegend"
 				, "Constructors.APIIndex"
 				, ref

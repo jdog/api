@@ -1,10 +1,10 @@
-PAGE.loadScript(
+J.load(
 	"page.extend.events.js"
 	, "page.constructors.TextAreaSubmitter.js"
 	, "page.Constructors.TextConverter.js"
 )
 
-PAGE.addWait(
+J.addWait(
 	"Modules.editor"
 	, [
 		"ext.events"

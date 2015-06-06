@@ -26,23 +26,21 @@
 		<div id="API"></div>
 	</div>
 
-<script src="page.loader.js"></script>
-<script src="//jdog.github.io/api/page.base.js"></script>
+<script src="jdog.js"></script>
+<script src="jdog.bridgeTo2.0.js"></script>
 <script src="//jdog.github.io/api/page.modules.remoteAPI.js"></script>
 
 <script>
 
-	PAGE.addWait(
+	J.addWait(
 		"Modules.localAPI"
 		, [ "Modules.remoteAPI" ] // local inherits from remote
 		, function(ref) {
 
 			var dog = ref.remoteAPI
 
-			PAGE.loadScript(
-					"//jdog.github.io/page_loader/page.docs.loader_add.js"
-				, "//jdog.github.io/page_loader/page.docs.loader_PAGE.js"
-				, "//jdog.github.io/page_loader/page.docs.loader.js"
+			J.load(
+					"//jdog.github.io/jdog/j.docs.j.js"
 				, "page.docs.constructors.localStorage.js"
 				, "page.docs.extensions.clone.js"
 				, "page.docs.modules.urlParams.js"
@@ -50,9 +48,7 @@
 			)
 
 			dog.buildAllSections([
-				"Docs.loader_PAGE"
-				, "Docs.loader_add"
-				, "Docs.loader"
+				"Docs.J"
 				, "Docs.Extensions.clone"
 				, "Docs.Extensions.events"
 				, "Docs.Constructors.LocalStorage"

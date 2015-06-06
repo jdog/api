@@ -1,9 +1,4 @@
-// PAGE.loadStyle(
-// 	"//jdog.github.io/api/style.css"
-// 	, "//jdog.github.io/api/sidePanel.css"
-// )
-
-PAGE.loadScript(
+J.load(
 	"//jdog.github.io/api/page.extend.batchCallback.js"
 	, "//jdog.github.io/api/page.ajax.js"
 	, "//jdog.github.io/api/page.Constructors.APIMethod.js"
@@ -18,7 +13,7 @@ PAGE.loadScript(
 	, "//jdog.github.io/api/page.Modules.navigation.js"
 	, true)
 
-PAGE.addWait(
+J.addWait(
 	"Modules.remoteAPI"
 	, [
 		"ajax"
@@ -72,7 +67,7 @@ PAGE.addWait(
 
 		dog.e_root.appendChild(e_section)
 
-		PAGE.wait(path, function(data) {
+		J.wait(path, function(data) {
 
 			for (var x in data.Methods) section.push( data.Methods[x] )
 			build(e_section, data.Methods)
@@ -81,7 +76,7 @@ PAGE.addWait(
 	}
 
 	var legend = dog.legend = function legend(callback) {
-		PAGE.wait(
+		J.wait(
 			"Functions.createLegend"
 			, "Constructors.APIIndex"
 			, ref
