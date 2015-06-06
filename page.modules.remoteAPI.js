@@ -1,7 +1,7 @@
-PAGE.loadStyle(
-	"//jdog.github.io/api/style.css"
-	, "//jdog.github.io/api/sidePanel.css"
-)
+// PAGE.loadStyle(
+// 	"//jdog.github.io/api/style.css"
+// 	, "//jdog.github.io/api/sidePanel.css"
+// )
 
 PAGE.loadScript(
 	"//jdog.github.io/api/page.extend.batchCallback.js"
