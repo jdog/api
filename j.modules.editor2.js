@@ -1,5 +1,5 @@
 J.load(
-	"j.Constructors.dataBind.js"
+	"j.constructors.dataBind.js"
 	, "page.Constructors.APIMethod.js"
 	, "page.ColorizeMap.javascript.js"
 	, "page.ColorizeMap.jDog.js"
