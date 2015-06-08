@@ -11,6 +11,11 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="sidePanel.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,600,300,400' rel='stylesheet' type='text/css'>
+<style>
+	textarea { box-sizing:border-box; width:100%; min-height:14em; font-size:11px; }
+
+
+</style>
 </head>
 <body>
 	<div id="sidePanel">
@@ -28,11 +33,24 @@
 		<p>
 			Converts an HTML example into JSON friendly string
 		</p>
-		<div id="Editor"></div>
+
+		<div id="API">
+			<div>
+				<div class="Label">Source</div>
+				<textarea id="TextArea"></textarea>
+			</div>
+			<div>
+				<div class="Label">JSON</div>
+				<textarea id="Output"></textarea>
+			</div>
+			<div class="Examples">
+				<div class="Label">Colorized</div>
+				<div class="Example" id="Example"></div>
+			</div>
+		</div>
 	</div>
 </body>
-<script src="page.loader.js"></script>
-<script src="page.base.js"></script>
-<script src="page.modules.editor.js"></script>
+<script src="jdog.js"></script>
+<script src="j.modules.editor2.js"></script>
 <script src="page.Modules.navigation.js"></script>
 </html>
