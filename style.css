@@ -163,8 +163,6 @@ dl dd { margin:0 0 0 10px; padding:0; }
 @media (min-width:0px) and (max-width:600px) {
 	#sidePanel.Open { display:none; }
 	#sidePanel.Open + .wrapper { padding-right:0; }
-	body,
-	.wrapper { font-size:12px; line-height:16px; }
 }
 
 @media (min-width:601px) and (max-width:870px) {
