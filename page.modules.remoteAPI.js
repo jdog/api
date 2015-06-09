@@ -105,8 +105,6 @@ J.addWait(
 
 	var buildAllSections = dog.buildAllSections = function buildAllSections(arr) {
 
-		dog.e_root.innerHTML = ""
-
 		dog.batch = new ref.BatchCallback(arr.length, function() {
 
 			legend(function() {
