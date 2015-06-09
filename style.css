@@ -83,7 +83,7 @@ h4 + h5 { margin-top:0; }
 .jump a { display:block; text-decoration:none; }
 
 pre {display: block; padding: 40px; border: 1px dotted rgba(0,0,0,.1); font-size:89%; }
-code {display: inline-block; padding: 5px; border: 1px dotted rgba(0,0,0,.1); font-size:89%; line-height:120%; }
+code {display: inline-block; padding: 5px; border: 1px dotted rgba(0,0,0,.1); font-size:89%; line-height:120%; overflow:auto; }
 pre, code { white-space:pre-wrap; }
 pre > u { text-decoration:none; font-size:150%; vertical-align:middle; }
 pre > em { color:rgba(0,0,0,.3) }
@@ -116,7 +116,7 @@ dl dd { margin:0 0 0 10px; padding:0; }
 #API .Definitions { }
 #API .Examples { }
 #API .Examples .Example { white-space:pre-wrap; font-family:
-'monoFont', monospace; padding: 0.8em 1.2em; border:1px dotted rgba(0,0,0,.1); margin: 0 0px .5em; background-color: rgba(255, 255, 255, 0.55); line-height: 1.5em; font-size: 1em; }
+'monoFont', monospace; padding: 0.8em 1.2em; border:1px dotted rgba(0,0,0,.1); margin: 0 0px .5em; background-color: rgba(255, 255, 255, 0.55); line-height: 1.5em; font-size: 0.85em; }
 
 .Examples .keyword  {  color: #000000;  font-weight: bold;}
 .Examples .support  {  color: #000000; font-weight:bold; }
@@ -134,7 +134,7 @@ dl dd { margin:0 0 0 10px; padding:0; }
 .Examples .inQuotes { color: rgba(106, 112, 47, 0.86); font-weight:normal; font-style:italic; }
 .Examples .Dog { color: rgb(21, 117, 206); font-weight:bold; }
 
-.Usage { font-family:monospace; }
+.Usage { font-family:monospace; font-size: 0.9em;}
 .Usage .Label { font-family:"copy", sans-serif; }
 .Usage {}
 
@@ -163,6 +163,11 @@ dl dd { margin:0 0 0 10px; padding:0; }
 @media (min-width:0px) and (max-width:600px) {
 	#sidePanel.Open { display:none; }
 	#sidePanel.Open + .wrapper { padding-right:0; }
+	body,
+	.wrapper { font-size:15px; line-height:26px; }
+	#API dl {
+		padding: 0;
+	}
 }
 
 @media (min-width:601px) and (max-width:870px) {
@@ -177,5 +182,4 @@ dl dd { margin:0 0 0 10px; padding:0; }
 	.AlwaysOpen #sidePanel.Open + .wrapper { padding-right: 300px; max-width:initial; }
 	.AlwaysOpen #sidePanel.Open + .wrapper h1 { }
 }
-
 
