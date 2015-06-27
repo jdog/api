@@ -70,18 +70,18 @@ PAGE.add("Constructors.APIMethod", function(e_parent, data, options) {
 			, data = dog.data 
 
 		html += "<div class='Title'>"
-		+ "<a href='#' title='To Top' class='link linkBack'>⌅</a>"
-		+ "<span class='Tags'>"
-		+ data.Tags ? data.Tags.length ? data.Tags.join(", ") : "" : ""
-		+ "</span>"
-		+ "<a name='" + data.Name + "' href='#" + data.Name + "' class='link' title='Link to Here'>§</a>"
-		+ data.Name
-		+ "</div>"
+		html += "<a href='#' title='To Top' class='link linkBack'>⌅</a>"
+		html += "<span class='Tags'>"
+		html += data.Tags ? data.Tags.length ? data.Tags.join(", ") : "" : ""
+		html += "</span>"
+		html += "<a name='" + data.Name + "' href='#" + data.Name + "' class='link' title='Link to Here'>§</a>"
+		html += data.Name
+		html += "</div>"
 
-		+ "<div class='Guts'>"
-		+ "<div class='Source'>"
-		+ makeLinks(data.Source || [])
-		+ "</div>"
+		html += "<div class='Guts'>"
+		html += "<div class='Source'>"
+		html += makeLinks(data.Source || [])
+		html += "</div>"
 
 		if (data.Description) {
 			html += "<div class='Description'>"
