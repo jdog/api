@@ -80,8 +80,7 @@ PAGE.add("Constructors.APIMethod", function(e_parent, data, options) {
 
 		html += "<div class='Guts'>"
 		html += "<div class='Source'>"
-		html += "Source: "
-		html += data.Source ? makeLinks(data.Source) : ""
+		html += makeLinks(data.Source || [])
 		html += "</div>"
 
 		if (data.Description) {
