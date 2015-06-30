@@ -53,6 +53,17 @@ PAGE.add("Constructors.APIMethod", function(e_parent, data, options) {
 		}
 		return html
 	}
+	
+	function makeLinks(arr) {
+		var html = ""
+			, x = 0
+			, item
+	
+		for (; item = arr[x]; x++)
+			html += "<a href='" + item + "'>" + item + "</a>"
+	
+		return html
+	}
 
 	function build() {
 		var html = ""
@@ -69,8 +80,7 @@ PAGE.add("Constructors.APIMethod", function(e_parent, data, options) {
 
 		html += "<div class='Guts'>"
 		html += "<div class='Source'>"
-		html += "Source: "
-		html += data.Source ? data.Source.join(", ") : ""
+		html += makeLinks(data.Source || [])
 		html += "</div>"
 
 		if (data.Description) {
